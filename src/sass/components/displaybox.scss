@@ -1,0 +1,32 @@
+.displaybox {
+  width: 80%;
+  margin: 3rem auto;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  align-items: center;
+  padding: 2rem 3rem;
+  @media only screen and(max-width:1000px) {
+    width: 90%;
+  }
+  @media only screen and(max-width:750px) {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  @media only screen and(max-width:550px) {
+    width: 90%;
+  }
+  &__content {
+    @media only screen and(max-width:750px) {
+      display: block;
+      width: 100%;
+      &:not(:last-child) {
+        border-bottom: 1px solid $dark-gray;
+      }
+      padding-top: 2rem;
+    }
+  }
+}

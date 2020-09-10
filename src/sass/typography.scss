@@ -1,0 +1,29 @@
+.main-heading {
+  color: $white;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 4rem;
+  @media only screen and(max-width:1000px) {
+    font-size: 3rem;
+  }
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  color: $dark-gray;
+  font-weight: $normal;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: $medium;
+}
+
+.result {
+  color: $very-dark-gray;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+  font-weight: $medium;
+  @media only screen and(max-width:500px) {
+    font-size: 1.7rem;
+  }
+}

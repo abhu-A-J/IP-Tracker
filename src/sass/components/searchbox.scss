@@ -1,0 +1,51 @@
+.searchbox {
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and(max-width:750px) {
+    width: 70%;
+  }
+  @media only screen and(max-width:550px) {
+    width: 90%;
+  }
+
+  &__input {
+    flex: 0 0 90%;
+    padding: 1.2rem 2.2rem;
+    font-family: inherit;
+    color: $dark-gray;
+    outline: none;
+    border: none;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    font-size: 1.5rem;
+    color: $very-dark-gray;
+    @media only screen and(max-width:500px) {
+      flex: 0 0 85%;
+    }
+  }
+
+  &__submit {
+    flex: 0 0 10%;
+    background: $black;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    width: max-content;
+    @media only screen and(max-width:500px) {
+      flex: 0 0 15%;
+    }
+    &:hover,
+    &:focus {
+      background: rgba($black, 0.7);
+    }
+  }
+}

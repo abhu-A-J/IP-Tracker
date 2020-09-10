@@ -1,0 +1,27 @@
+@import "./sass/main";
+
+#map {
+  height: 50vh;
+  width: 80%;
+  margin: 2rem auto;
+  @media only screen and(max-width:1000px) {
+    width: 90%;
+  }
+}
+
+footer {
+  padding: 2rem;
+}
+.footer__line {
+  font-size: 1.5rem;
+  color: coral;
+  text-align: center;
+  margin-top: 2rem;
+  a {
+    text-decoration: none;
+    color: green;
+    &:hover {
+      color: rgb(138, 228, 22);
+    }
+  }
+}
